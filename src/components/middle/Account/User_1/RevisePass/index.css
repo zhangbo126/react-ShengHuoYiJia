@@ -1,0 +1,168 @@
+
+ #data1 {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 78px;
+    width: 1008px
+}
+
+ #data1 .Mymsg {
+    border-bottom: .5px solid #E6E6E6;
+    width: 100%
+}
+
+ #data1 .Mymsg div {
+    width: 100px;
+    height: 48px;
+    border-right: .5px solid #E6E6E6;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px
+}
+
+ #data1 .modify {
+    margin-left: 18px;
+    padding-bottom: 110px;
+    position: relative;
+    color: #333333;
+}
+
+ #data1 .modify .pTxt {
+    font-size: 17px;
+    color: #888484;
+    font-weight: 600
+}
+
+ #data1 .modify .modHead {
+    width: 190px;
+    height: 190px;
+    box-sizing: border-box;
+    padding: 40px 0 50px 0
+}
+
+ #data1 .modify .modHead .headImg img {
+    border-radius: 50%
+}
+
+ #data1 .modify .modName,  #data1 .modify .nameTel {
+    width: 380px
+}
+
+ #data1 .modify .modName input,  #data1 .modify .nameTel input {
+    border: none;
+    outline: none
+}
+
+ #data1 .modify .modName p,  #data1 .modify .nameTel p {
+    line-height: 48px
+}
+
+ #data1 .modify .modName .usersName,  #data1 .modify .nameTel .tel {
+    width: 277px;
+    height: 48px;
+    border: 1px solid #E6E6E6;
+    line-height: 48px;
+    box-sizing: border-box;
+    padding-left: 10px
+}
+
+ #data1 .modify .modName .nameTip {
+    margin: 10px 0 0 3px;
+    color: #616060
+}
+
+ #data1 .modify .nameTel {
+    margin-top: 35px;
+    margin-bottom: 50px
+}
+
+ #data1 .modify .keep {
+    width: 280px;
+    box-sizing: border-box
+}
+
+ #data1 .modify .keep button {
+    float: right;
+    width: 80px;
+    height: 37px;
+    border-radius: 4px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #f29525
+}
+
+ #data1 .modpass {
+    border-top: .5px solid #E6E6E6;
+    width: 100%;
+    padding: 20px 0 48px 0
+}
+
+ #data1 .modpass ul {
+    margin-left: 20px
+}
+
+ #data1 .modpass ul .passTxt {
+    width: 113px;
+    font-size: 15px;
+    font-weight: 600
+}
+
+ #data1 .modpass ul .passtip {
+    width: 440px;
+    color: #737373
+}
+
+ #data1 .modpass ul .passtip,  #data1 .modpass ul .passTxt {
+    padding-top: 7px
+}
+
+ #data1 .modpass ul .btn button {
+    width: 82px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #26c08a;
+    text-align: center;
+    line-height: 35px;
+    color: #FFFFFF
+}
+
+ #data1 .modpass ul .padd {
+    padding: 27px 0
+}
+
+
+.modify #popup {
+    background-color: #f29525;
+    width: 190px;
+    height: 90px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    left: 35%;
+  
+    top: 40%
+}
+
+.modify  #popup .popupTxt {
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    color: #5a8e56
+}
+
+.modify #popup .ok, #popup .no {
+    color: #FFFFFF;
+    width: 95px;
+    line-height: 45px
+}
+
+.ant-btn-primary{
+    border-color: #f29525 !important;
+}
+
+input{
+    height: 100%;
+    vertical-align: text-bottom;
+}

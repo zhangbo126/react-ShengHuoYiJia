@@ -1,0 +1,23 @@
+ .singTop {
+    width: 600px;
+    padding-top: 40px
+}
+
+ .singTop .singLogo {
+    margin-left: 80px;
+    margin-right: 20px
+}
+
+ .singTop .singTxt {
+    width: 140px;
+    font-size: 20px;
+    color: #737373;
+    line-height: 98px
+}
+
+ .singTop .singTxt span {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 20px;
+    color: #867e7e
+}

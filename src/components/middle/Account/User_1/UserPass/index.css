@@ -1,0 +1,83 @@
+#pass {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 78px;
+    width: 1008px
+}
+
+
+
+#pass .Mymsg {
+    border-bottom: .5px solid #E6E6E6;
+    width: 100%
+}
+
+#pass .Mymsg div {
+    width: 100px;
+    height: 48px;
+    border-right: .5px solid #E6E6E6;
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px
+}
+
+#pass .passBox {
+    width: 360px;
+    margin: 30px 0 51px 15px
+}
+
+#pass .passBox ul li {
+    margin-bottom: 15px
+}
+
+#pass .passBox ul li .passTip {
+    float: left;
+    line-height: 37px
+}
+
+#pass .passBox ul li .passInp {
+    float: right
+}
+
+#pass .passBox ul li .passTip {
+    width: 67px;
+    text-align: right;
+    font-size: 15px;
+    color: #1A1A1A
+}
+
+#pass .passBox ul li .passInp {
+    width: 280px;
+    height: 35px;
+    border: 1px solid #E6E6E6;
+    line-height: 35px
+}
+
+#pass .passBox ul li .passInp input {
+    box-sizing: border-box;
+    padding-left: 12px;
+    border: none;
+    outline: none;
+    width: 100%
+}
+
+#pass .passBox .active {
+    color: red
+}
+
+#pass .passBox .passbtn {
+    margin-top: 50px
+}
+
+#pass .passBox .passbtn button {
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #FFFFFF;
+    background-color: #f29525;
+    border-radius: 4px
+}
+
+.take{
+    color: red;
+}

@@ -1,0 +1,135 @@
+#reg {
+    width: 1200px;
+    margin: 0 auto
+}
+
+#reg .singTop {
+    width: 600px;
+    padding-top: 40px
+}
+
+#reg .singTop .singLogo {
+    margin-left: 80px;
+    margin-right: 20px
+}
+
+#reg .singTop .singTxt {
+    width: 140px;
+    font-size: 20px;
+    color: #737373;
+    line-height: 98px
+}
+
+#reg .singTop .singTxt span {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 20px;
+    color: #867e7e
+}
+
+#reg .regbox {
+    margin: 50px auto;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    width: 900px
+}
+
+#reg .regbox .regL {
+    width: 400px;
+    box-sizing: border-box;
+    padding: 0 30px
+}
+
+#reg .regbox .regL p .regtxt {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 0 22px 0;
+    color: #000000
+}
+
+#reg .regbox .regL p span {
+    display: inline-block;
+    color: red;
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 10px
+}
+
+#reg .regbox .regL .regInp div {
+    text-align: right;
+    margin-bottom: 15px
+}
+
+#reg .regbox .regL .regInp div span {
+    color: #656565;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 8px
+}
+
+#reg .regbox .regL .regInp div input {
+    width: 260px;
+    height: 35px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    border: 1px solid #ebebeb;
+    outline: none
+}
+
+#reg .regbox .regL .regInp div .active {
+    border: 1px solid #ffa130
+}
+
+#reg .regbox .regL .regInp .code input {
+    width: 153px
+}
+
+#reg .regbox .regL .regInp .code button {
+    width: 97px;
+    height: 35px;
+    border: 1px solid #EBEBEB;
+    text-align: center;
+    line-height: 32px;
+    color: #000000;
+    border-radius: 2px;
+    margin-left: 10px;
+    vertical-align: top
+}
+
+#reg .regbox .regL .btn {
+    padding-bottom: 72px
+}
+
+#reg .regbox .regL .btn button {
+    width: 260px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ffa130;
+    border-radius: 2px
+}
+
+#reg .regbox .regL .btn button a {
+    color: #FFFFFF
+}
+
+#reg .regbox .regR {
+    text-align: center
+}
+
+#reg .regbox .regR .tip {
+    margin: 90px 0 80px 0;
+    width: 426px;
+    height: 230px;
+    border-left: 1px solid #e6e6e6;
+    padding-top: 90px;
+    box-sizing: border-box;
+    color: #656565
+}
+
+#reg .regbox .regR .tip p {
+    margin-bottom: 5px
+}
+
+#reg .regbox .regR .tip div a {
+    color: red
+}

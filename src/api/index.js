@@ -1,0 +1,1 @@
+export const CITY_LOCATION ='../../public/static/json/city.json'

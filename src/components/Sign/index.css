@@ -1,0 +1,104 @@
+
+#sign{
+    width: 1200px;
+    margin: 0 auto
+}
+
+.singBox .singL {
+    width: 600px
+}
+
+.singBox .singR {
+    padding-top: 60px;
+    width: 600px;
+    box-sizing: border-box;
+    padding-left: 64px
+}
+
+.singBox .singR .singInp {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.6);
+    width: 335px;
+    box-sizing: border-box;
+    padding: 0 35px
+}
+
+.singBox .singR .singInp p {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 18px 0 22px 0
+}
+
+.singBox .singR .singInp p span {
+    font-size: 13px;
+    font-weight: normal;
+    color: red;
+    display: inline-block;
+    margin-left: 10px
+}
+
+.singBox .singR .singInp .inp div {
+    width: 260px;
+    box-sizing: border-box;
+    border: 1px solid #ebebeb
+}
+
+.singBox .singR .singInp .inp div span {
+    height: 35px;
+    color: #ebebeb;
+    display: inline-block;
+    width: 30px;
+    font-size: 19px;
+    text-align: center
+}
+
+.singBox .singR .singInp .inp div input {
+    border: none;
+    vertical-align: middle;
+    width: 200px;
+    height: 35px;
+    outline: none
+}
+
+.singBox .singR .singInp .inp .active {
+    border: 1px solid #ffa130
+}
+
+.singBox .singR .singInp .inp .pass {
+    margin: 15px 0
+}
+
+.singBox .singR .singInp .check span {
+    color: #8e8e8e;
+    margin-left: 8px;
+    vertical-align: text-bottom
+}
+
+.singBox .singR .singInp .singBtn {
+    margin-top: 90px
+}
+
+.singBox .singR .singInp .singBtn .btn button {
+    width: 260px;
+    height: 42px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 42px;
+    background-color: #ffa130
+}
+
+.singBox .singR .singInp .singBtn .btn button a {
+    font-size: 15px;
+    color: #FFFFFF
+}
+
+.singBox .singR .singInp .singBtn .singother {
+    padding: 10px 0 25px 0
+}
+
+.singBox .singR .singInp .singBtn .singother span {
+    color: #8e8e8e
+}
+
+.singBox .singR .singInp .singBtn .singother span a {
+    color: #8e8e8e
+}

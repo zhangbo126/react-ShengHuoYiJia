@@ -1,0 +1,67 @@
+
+
+ #data .dataTop .dataTopL {
+    width: 680px;
+    height: 155px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    padding: 30px 0
+}
+
+#data .dataTop .dataTopL .head {
+    margin-left: 28px;
+    margin-right: 20px;
+    height: 93px;
+    width: 93px
+}
+
+#data .dataTop .dataTopL .head img {
+    width: 100%;
+    border-radius: 50%
+}
+
+#data .dataTop .dataTopL .users {
+    width: 330px
+}
+
+#data .dataTop .dataTopL .users .namebox {
+    padding: 12px 0
+}
+
+#data .dataTop .dataTopL .users .namebox .name {
+    font-size: 17px
+}
+
+#data .dataTop .dataTopL .users .namebox .vip {
+    display: inline-block;
+    width: 60px;
+    height: 18px;
+    border-radius: 7px;
+    background-color: #ffa130;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 18px;
+    margin-left: 20px
+}
+
+#data .dataTop .dataTopR {
+    width: 300px;
+    border: 1px solid #e6e6e6;
+    background-color: #faf8f4
+}
+
+#data .dataTop .dataTopR .moneyTxt {
+    padding-top: 58px
+}
+
+#data .dataTop .dataTopR .moneyTxt p {
+    margin-bottom: 12px
+}
+
+#data .dataTop .dataTopR .moneyTxt i {
+    font-size: 20px
+}
+
+.modify{
+    color: #f70505;
+}

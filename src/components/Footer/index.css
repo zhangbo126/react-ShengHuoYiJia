@@ -1,0 +1,27 @@
+#footer {
+    width: 100%;
+    background-color: #f9f0e4;
+    padding: 40px 0;
+    box-sizing: border-box;
+    text-align: center
+}
+
+#footer ul {
+    width: 570px;
+    margin: 0 auto
+}
+
+#footer ul li {
+    float: left;
+    margin-right: 8px;
+    font-size: 14px;
+    color: #8a857f
+}
+
+#footer ul .my {
+    margin: 0
+}
+
+#footer div {
+    margin-top: 10px
+}

@@ -1,0 +1,86 @@
+#data6 .locationBox {
+    width: 1006px
+}
+
+#data6 .locationBox .top {
+    border-bottom: 1px solid #E5E5E5
+}
+
+#data6 .locationBox .top p {
+    width: 105px;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    border-bottom: none
+}
+
+#data6 .locationBox .myloc {
+    width: 973px;
+    padding-top: 22px;
+    padding-bottom: 15px
+}
+
+#data6 .locationBox .myloc .active {
+    border: 2px solid #fb9898 !important
+}
+
+#data6 .locationBox .myloc .mylocBox {
+    margin-right: 16px;
+    width: 470px;
+    height: 115px;
+    border: 2px solid #e5e5e5;
+    box-sizing: border-box;
+    padding: 20px 15px 0 20px;
+    margin-bottom: 20px
+}
+
+#data6 .locationBox .myloc .mylocBox .user {
+    position: relative;
+    margin-bottom: 20px
+}
+
+#data6 .locationBox .myloc .mylocBox .user .locbg {
+    position: absolute;
+    right: -15px;
+    top: -20px;
+    width: 32px;
+    height: 30px;
+    /* background-image: url(../images/locationbg.png); */
+    display: none
+}
+
+#data6 .locationBox .myloc .mylocBox .user span {
+    font-size: 13px
+}
+
+#data6 .locationBox .myloc .mylocBox .user .tel {
+    display: inline-block;
+    margin-left: 15px
+}
+
+#data6 .locationBox .myloc .mylocBox .btn {
+    width: 70px;
+    margin-top: 7px;
+    float: right;
+    text-align: center
+}
+
+#data6 .locationBox .add button {
+    box-sizing: border-box;
+    width: 95px;
+    height: 35px;
+    border: 1px solid #E5E5E5;
+    line-height: 35px;
+    text-align: center;
+    color: #808080;
+    font-size: 15px;
+    background-color: #FFFFFF
+}
+
+.isLocation{
+    height:11.493333rem;
+    text-align: center;
+    line-height: 11.493333rem;
+}

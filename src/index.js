@@ -3,8 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import '../src/assets/font/iconfont.css'
+import '../src/assets/reset/reset.css' //样式重置
+import {BrowserRouter as Router} from 'react-router-dom'
+import reduex from './store'
+import {Provider} from 'react-redux'
+import {createStore,applyMiddleware} from 'redux'
+import thunk from 'redux-thunk'
+import logger from 'redux-logger'
+const store = createStore(reduex,applyMiddleware(thunk,logger))
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}>
+    <Router><App /></Router>
+</Provider> ,document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,0 +1,54 @@
+#pag8 {
+    margin-top: 30px
+}
+
+#pag8 .personal {
+    width: 1200px;
+    margin: 0 auto
+}
+
+#pag8 .personal .personalL {
+    width: 172px;
+    margin-bottom: 470px;
+    border: 1px solid #e6e6e6
+}
+
+#pag8 .personal .personalL li {
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    color: #808080
+}
+
+#pag8 .personal .personalL .active {
+    color: #FFFFFF;
+    background-color: #f88f1f
+}
+
+#pag8 .personal .personalL .means {
+    border-top: 5px solid #ffa130
+}
+
+#pag8 .personal .personalR {
+    width: 1005px;
+    margin-left: 21px
+}
+
+#pag8 .personal a{
+    color: #808080;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.Notlogged h2{
+    font-size: 1.733333rem /* 40/75 */;
+    text-align: center;
+}
+
+.Notlogged h2 a{
+    color: red !important;
+    text-decoration: underline;
+    display: inline !important;
+}
+
