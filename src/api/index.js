@@ -1,1 +1,1 @@
-export const CITY_LOCATION ='../../public/static/json/city.json'
+export const CITY_LOCATION ='../static/json/city.json'

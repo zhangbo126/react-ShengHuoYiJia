@@ -27,22 +27,11 @@ import {CITY_LOCATION} from '../../../api'
 
 
        componentDidMount(){
-        //    console.log(CITY_LOCATION)
-        fetch('http://localhost:3000/public/city.json',{
-			method:'post',
-			headers:{
-				"Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
-			},	
-			// body:`users=23123`
-		}).then(res=>res.json()).then(req=>{
-
-              console.log(req)
-        })
-
-   
-       }
-    
-
+		 fetch(CITY_LOCATION).then(req=>req.json())
+		 .then(data=>{
+			  console.log(data)
+		 })
+		}
      //取消
      call=()=>{
         //隐藏 地址框
