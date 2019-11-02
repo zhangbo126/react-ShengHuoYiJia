@@ -43,8 +43,8 @@ export default class Middle extends React.Component {
                             <Route path="/articles" component={Articles}></Route>
                             <Route path="/vip" component={Vip}></Route>
                             <Route path="/my" component={My}></Route>
-                            <Route path="/account/:id" component={Account}></Route>
-                            <Redirect to="/home"></Redirect>
+                            <Route path="/account" component={Account}></Route>
+                            {/* <Redirect to="/home"></Redirect> */}
                         </Switch>   
             </div>
         )

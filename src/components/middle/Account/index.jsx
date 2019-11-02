@@ -23,20 +23,26 @@ export default class Account extends React.Component{
     }
 
     componentDidMount(){
-
+           
          let b =localStorage.getItem('users')
          let user = JSON.parse(b)
         //  console.log(user.isSign)
-        this.setState({
-           isSing:!user
-        })
+         if(user.isSign==true && b !=null){
+            this.setState({
+                isSing:false
+             })
+         }else{
+            this.setState({
+                isSing:true
+             }) 
+         }
 
     }
 
     render(){
         return(
             <div className="account" >
-        <div id="pag8" class="pag">           
+        <div id="pag8" className="pag">           
             <div className="personal clearfix">
                 <ul className="personalL fl" id="group">
                     <li className="means"><NavLink to='/account/user_1'>基本资料</NavLink></li>
@@ -58,7 +64,7 @@ export default class Account extends React.Component{
                          <Route path="/account/user_6" component={User_6}></Route>
                          <Route path="/account/user_7" component={User_7}></Route>
                          <Route path="/account/user_8" component={User_8}></Route> 
-                         <Redirect to="/account/user_1"></Redirect>                      
+                                     
                          </div>
                          <div hidden={!this.state.isSing} className="Notlogged">
                              <h2>你还未登录请先<a href="/sign">登录</a>查看个人信息</h2>                

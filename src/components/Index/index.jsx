@@ -14,10 +14,14 @@ export default class Index extends React.Component{
         this.state={}
     }
 
+    // componentDidMount(){
+    //     console.log(this.props.history)
+    // }
+
     render(){
         return(
             <div className="index" >
-               <Head></Head>
+               <Head history={this.props.history}></Head>
                <Middle></Middle>
                <Footer></Footer>
                <Addlocation></Addlocation>

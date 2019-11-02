@@ -23,7 +23,7 @@ import  {issign} from '../../store/sign'
 			tip:'' //登录提示信息
 		}
     }
-
+    
 	
      isSign=()=>{
 		//  let fromData = new FormData()
@@ -58,8 +58,9 @@ import  {issign} from '../../store/sign'
 					// console.log(req.data)
 					//  console.log()
 					  this.props.issign(req.data)
-					  this.props.history.push('/account/?'+req.data[0]._id)
-					   
+					//   console.log(req.data)
+					  this.props.history.push('/account/user_1',{id:req.data[0]._id})
+					  
 				  }
 			  })	
 		})

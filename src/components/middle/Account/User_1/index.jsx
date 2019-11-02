@@ -34,13 +34,13 @@ import {getpass} from '../../../../store/user'
 
 
 			componentDidMount(){
+			
+			// let id =this.props.location.state.id
+			//  console.log(this.props.location.state)
 			let b =localStorage.getItem('users')
 			let user= JSON.parse(b)
-		    // console.log(user._id)
-			if(user === null){
-				//  this.props.history.push('/home')
-				return null
-			}else{
+			
+			  if(user.isSign && b!=null){
 				fetch('/myData/'+user.userId,{
 					method:'post',
 					headers:{
@@ -48,16 +48,16 @@ import {getpass} from '../../../../store/user'
 					}
 		
 					}).then(res=>res.json()).then(req=>{
-				
+				       
 			   //保存当前用户密码 id 收货地址			
-				  this.props.getpass(req.password,req._id,req.location)
+				  this.props.getpass(req.password,req._id,req.location,req.users)
 				//    console.log(req.password)
 
 				this.setState({
 			        	money:req.money
 				})
 				//判断用户是否有名字
-				if(req.name == ''){
+				if(req.name ==undefined){
 				   this.setState({
 			         	name:req._id
 				})
@@ -68,14 +68,24 @@ import {getpass} from '../../../../store/user'
 				     })
 				}
 				//判断是否添加收货地址
+				//  console.log(req.location)
 				if(req.location.length === 0){
 				this.setState({
 				       location:'您还未添加收货地址'
 			    	})
+				   }else{
+					   this.setState({
+						   location:req.location[0].loc+req.location[0].weizi
+					   })
 				   }
 				})
-			}
-
+			  }else{
+				  this.setState({
+					  isShow:true,
+				  })
+			  }
+		
+     
 
 }
 

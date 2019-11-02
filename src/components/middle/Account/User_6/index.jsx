@@ -1,14 +1,19 @@
+/* eslint-disable eqeqeq */
 import React from 'react'
 import './index.css'
 import  {connect} from 'react-redux'
 import {addlocation} from '../../../../store/isLocation'
+import {getpass} from '../../../../store/user'
 @connect((state)=>{
-    console.log(state)
+   
+    //   console.log(state.user.location)
     return{
-       locaction:state.user.location
+        Userlocaction:state.user.location,
+        id:state.user.id,
+        tel:state.user.tel
     }
 },{
-   addlocation
+   addlocation,getpass
 })
 
  class User_6 extends React.Component {
@@ -16,38 +21,85 @@ import {addlocation} from '../../../../store/isLocation'
     constructor(props) {
         super(props)
         this.state = {
-            isLocation:false,
+            
+            userLocation:[],//用户添加的地址
         }
     }
 
 
-
-
+ 
   componentDidMount(){
-
-      if( this.props.location){
-           this.setState({              
-               isLocation:!this.state.isLocation
-           })
-      }else{
-        this.setState({              
-            isLocation:!this.state.isLocation
-        })  
-      }
-      
-    //  console.log(this.props.locaction)
-
+     this.isShow()
   }
 
+    isShow=()=>{
+                //数据还未添加时
+    if(this.props.Userlocaction==undefined){
+      
+       this.setState({
+           isLocation:true,
+           userLocation:this.props.Userlocaction
+       })
+     }else if(this.props.Userlocaction.length>0){ //有地址时
+     
+            this.setState({              
+                       isLocation:false,
+                       userLocation:this.props.Userlocaction
+                   })
+        }else{ //没有地址时
+           this.setState({              
+               isLocation:true,
+               userLocation:this.props.Userlocaction
+           })
+        }
+    }
+
+
+    
+
+  //删除地址
+
+   delLocation=(index)=>{
+     
+    fetch('/del/'+this.props.id,{
+          method:'post',
+          headers:{
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
+          },
+          body:`tel=${this.props.Userlocaction[index].tel}`
+    }).then(req=>req.json()).then(data=>{
+
+         let b = this.state.userLocation.filter((v,i)=>{
+                  if(i!=index){
+                      return v
+                  }          
+            })
+       
+        
+        this.setState({
+            userLocation:b
+        })
+        
+    })
+      
+   }
+
+   // 修改地址
+
+   updateLocation=(i)=>{
+
+      this.props.addlocation(false,1)
+   }
+ 
 
   // 添加收货地址
 
   addLocation=()=>{
-     
-    this.props.addlocation(false)
+                         // 0 表示添加地址
+    this.props.addlocation(false,0)
       
 
-  }
+  }     
 
     render() {
         return (
@@ -59,21 +111,27 @@ import {addlocation} from '../../../../store/isLocation'
                             <p>收货地址</p>
                         </div>
                         <div className="myloc clearfix" hidden={this.state.isLocation}>
-                            <div className="mylocBox fl">
-                                <div className="user">
-                                    <div className="locbg"></div>
-                                    <span className="loc">广东广州</span>
-                                    <span className="name">张三</span>
-                                    <span className="tel">1500834512</span>
-                                </div>
-                                <div className="weizi">
-                                    <span>天河车陂东圃大马路8号时代TIT广场A座4楼430</span>
-                                </div>
-                                <div className="btn">
-                                    <span className="update">修改</span>|
-                             <span className="del">删除</span>
-                                </div>
-                            </div>
+                           
+                      {
+                           this.state.userLocation.map((v,i)=>{
+                           return   <div className="mylocBox fl" key={i}>
+                           <div className="user">
+                               <div className="locbg"></div>
+                               <span className="loc">{v.loc}</span>
+                               <span className="name">{v.name}</span>
+                               <span className="tel">{v.tel}</span>
+                           </div>
+                           <div className="weizi">
+                               <span>{v.weizi}</span>
+                           </div>
+                           <div className="btn">
+                               <span className="update" onClick={()=>this.updateLocation(i)}>修改</span>|
+                               <span className="del" onClick={()=>{this.delLocation(i)}}>删除</span>
+                           </div>
+                       </div>
+                         
+                           })
+                      }
                         </div>
                         <div className="isLocation" hidden={!this.state.isLocation}>
                             <h1>

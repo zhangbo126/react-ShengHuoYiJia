@@ -5,7 +5,7 @@ export default(state,action)=>{
       switch(action.type){
           case 'ADD_LOCATION':
            return {
-              hidden:action.hidden,
+              hidden:action.hidden,isLocation:action.isLocation
            }
            default:
            return{
@@ -14,10 +14,10 @@ export default(state,action)=>{
       }
 }
 
-
-
- export const  addlocation= (hidden)=>(dispatch)=>{
+                                  
+                                   //n :接收 0 或者1 判断是添加地址(0) 还是 修改地址(1)
+ export const  addlocation= (hidden,n)=>(dispatch)=>{
         //  console.log(hidden)
-        dispatch({type:'ADD_LOCATION',hidden})
+        dispatch({type:'ADD_LOCATION',hidden:hidden,isLocation:n})
        
 }

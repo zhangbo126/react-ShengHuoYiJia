@@ -1,0 +1,12 @@
+#fixed .fixedbox .fixbox .fixInp .city #mycity{
+    width: 70px;
+}
+
+#fixed .fixedbox .fixbox .fixInp .city .input{
+    width: 85px;
+}
+
+.ant-btn-primary{
+    background-color:#f29525 !important
+}
+

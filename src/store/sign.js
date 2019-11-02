@@ -5,7 +5,7 @@ export default(state,action)=>{
        switch(action.type){
             case 'SIGN':
              localStorage.setItem('users',JSON.stringify({sign:'[注销]',isSign:true,userId:action.user[0]._id}))  
-            return {sign:'[注销]',okSign:true,user:action.user}
+            return {sign:'[注销]',okSign:true,user:action.user,...state}
             case 'GETUSER':
              return{...state}
             default:
@@ -24,7 +24,7 @@ export const issign= (user)=>(dispatch)=>{
 }
 
 export const getUser=()=>(dispatch)=>{
-  
+      
       dispatch({type:'GETUSER'})
 
 }

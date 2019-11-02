@@ -31,7 +31,7 @@ export default class RevisePass extends React.Component{
         let b = localStorage.getItem('users')
         let user = JSON.parse(b)
         //    console.log(user)
-
+        //    console.log(user)
          if(this.refs.name.value !=''){
             fetch('/mod/'+user.userId,{
                 method:'post',
