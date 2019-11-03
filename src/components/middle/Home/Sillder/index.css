@@ -1,11 +1,38 @@
+
+.Sillder{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
 .ant-carousel .slick-slide {
-    text-align: center;
-    height: 160px;
-    line-height: 160px;
-    background: #364d79;
-    overflow: hidden;
-  }
-  
-  .ant-carousel .slick-slide h3 {
-    color: #fff;
-  }
+  text-align: center;
+  height: 482px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel .slick-dots{
+  height: auto;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+.ant-carousel .slick-dots li button{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.ant-carousel .slick-dots li.slick-active button{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.ant-carousel .slick-initialized .slick-slide img{
+  width: 100%;
+  height: 100%;
+}

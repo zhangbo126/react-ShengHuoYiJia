@@ -24,7 +24,7 @@ export default class Middle extends React.Component {
             <div className="navBox">
                 <div className="nav">
                     <ul className="clearfix" id="tab">
-                        <li className="active"><NavLink to="/">首页</NavLink></li>
+                        <li className="active"><NavLink to="/home">首页</NavLink></li>
                         <li><NavLink to="/life">精彩生活 </NavLink></li>
                         <li><NavLink to="/food"> 生活食品</NavLink> </li>
                         <li><NavLink to="/fumishing"> 生活用品</NavLink></li>

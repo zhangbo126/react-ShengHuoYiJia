@@ -9,6 +9,9 @@
     width: 1200px;
     margin: 0 auto
 }
+.usersName {
+    line-height: 30px;
+}
 
 .topBox .top ul li {
     float: left;

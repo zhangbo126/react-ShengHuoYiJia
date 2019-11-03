@@ -30,15 +30,15 @@ import {getpass} from '../../../../store/user'
  
   componentDidMount(){
      this.isShow()
+    //    console.log(this.props.Userlocaction)
   }
 
     isShow=()=>{
                 //数据还未添加时
-    if(this.props.Userlocaction==undefined){
-      
+    if(this.props.Userlocaction==undefined){      
        this.setState({
            isLocation:true,
-           userLocation:this.props.Userlocaction
+           userLocation:[]
        })
      }else if(this.props.Userlocaction.length>0){ //有地址时
      

@@ -22,7 +22,12 @@ import  {issign} from '../../store/sign'
         this.state = {
 			tip:'' //登录提示信息
 		}
-    }
+	}
+	
+	// componentDidMount(){
+	// 	//  console.log(this.props.match.params.id)
+	// 	//  this.refs.tel.value = this.props.match.params.id
+	// }
     
 	
      isSign=()=>{
@@ -99,8 +104,8 @@ import  {issign} from '../../store/sign'
 						<button><a id="herf"  onClick={this.isSign}>登录</a></button>
 					</div>
 					<div className="singother clearfix">
-						<span className='fl'><a href="/reg/reg">免费注册</a></span>
-						<span className="fr"><a href="/reg/pass">忘记密码</a></span>
+						<span className='fl'><a href="/reg?reg">免费注册</a></span>
+						<span className="fr"><a href="/reg?pass">忘记密码</a></span>
 					</div>
 				</div>
 		 	</div>

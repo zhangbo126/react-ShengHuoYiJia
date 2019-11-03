@@ -5,7 +5,7 @@ export default(state,action)=>{
           case 'GET_PASS':
 
             return {
-               tel:action.tel,pass:action.pass,id:action.id,location:action.location,...state
+               name:action.name,tel:action.tel,pass:action.pass,id:action.id,location:action.location,...state
             }
 
           default:{
@@ -14,9 +14,9 @@ export default(state,action)=>{
       }
 }
 
-export const getpass=(pass,id,location,tel)=>(dispatch)=>{
+export const getpass=(pass,id,location,tel,name)=>(dispatch)=>{
 
-       dispatch({type:'GET_PASS',pass,id,location,tel})
+       dispatch({type:'GET_PASS',pass,id,location,tel,name})
 
       
 }

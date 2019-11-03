@@ -38,8 +38,7 @@ import {getpass} from '../../../../store/user'
 			// let id =this.props.location.state.id
 			//  console.log(this.props.location.state)
 			let b =localStorage.getItem('users')
-			let user= JSON.parse(b)
-			
+			let user= JSON.parse(b)	
 			  if(user.isSign && b!=null){
 				fetch('/myData/'+user.userId,{
 					method:'post',
@@ -50,8 +49,8 @@ import {getpass} from '../../../../store/user'
 					}).then(res=>res.json()).then(req=>{
 				       
 			   //保存当前用户密码 id 收货地址			
-				  this.props.getpass(req.password,req._id,req.location,req.users)
-				//    console.log(req.password)
+				  this.props.getpass(req.password,req._id,req.location,req.users,req.name)
+				  
 
 				this.setState({
 			        	money:req.money

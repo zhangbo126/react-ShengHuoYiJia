@@ -1,0 +1,39 @@
+
+ .jumu {
+    width: 1200px;
+    margin: 0 auto
+}
+
+ .jumu h3 {
+    font-weight: 500;
+    font-size: 19px;
+    color: #808080;
+    padding: 22px 0;
+    text-align: center
+}
+
+ .jumu .jumuBox li {
+    float: left;
+    width: 590px;
+    margin-bottom: 20px
+}
+
+ .jumu .jumuBox li a {
+    display: block
+}
+
+ .jumu .jumuBox li a img {
+    width: 100%;
+    vertical-align: middle
+}
+
+ .jumu .jumuBox li div {
+    height: 55px;
+    background-color: #FFFFFF;
+    font-size: 20px;
+    line-height: 55px
+}
+
+ .jumu .jumuBox .mr {
+    margin-right: 20px
+}

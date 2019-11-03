@@ -133,3 +133,10 @@
 #reg .regbox .regR .tip div a {
     color: red
 }
+
+
+/* ant */
+.ant-btn:hover, .ant-btn:focus{
+    border-color: #ffa130;
+    color: #ffa130;
+}

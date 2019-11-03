@@ -55,7 +55,7 @@
     border: none;
     vertical-align: middle;
     width: 200px;
-    height: 35px;
+    height: 35px !important;
     outline: none
 }
 
@@ -101,4 +101,8 @@
 
 .singBox .singR .singInp .singBtn .singother span a {
     color: #8e8e8e
+}
+
+input{
+    height: 15px;
 }

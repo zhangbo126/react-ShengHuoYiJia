@@ -1,0 +1,125 @@
+ .content {
+    width: 1200px;
+    margin: 0 auto
+}
+
+ .content .brand {
+    margin-top: 20px
+}
+
+ .content .food {
+    width: 100%;
+    margin: 15px 0 20px 0
+}
+
+ .content .food .foodL {
+    box-sizing: border-box;
+    padding: 0 28px;
+    width: 270px;
+    overflow: hidden;
+    height: 400px;
+  
+    background-position: 0 0
+}
+
+ .content .food .foodL h3 {
+    font-size: 25px;
+    color: #2aad49;
+    margin-top: 28px
+}
+
+ .content .food .foodL p {
+    color: #91ca9f;
+    font-size: 19px
+}
+
+ .content .food .foodL ul li {
+    float: left;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 20px
+}
+
+ .content .food .foodL ul li a {
+    color: #3e3c3c
+}
+
+ .content .food .foodL ul li:hover {
+    background-color: #5ed67a;
+    border-radius: 25px
+}
+
+ .content .food .foodL ul li:hover a {
+    color: #FFFFFF
+}
+
+ .content .food .foodL ul .active {
+    background-color: #5ed67a;
+    border-radius: 25px
+}
+
+ .content .food .foodL ul .active a {
+    color: #FFFFFF
+}
+
+ .content .food .foodR {
+    width: 930px
+}
+
+ .content .food .foodR ul {
+    position: relative
+}
+
+ .content .food .foodR ul li {
+    width: 232.5px;
+    text-align: center;
+    float: left;
+    background-color: #FFFFFF
+}
+
+ .content .food .foodR ul .min .title {
+    padding: 17px 0
+}
+
+ .content .food .foodR ul .min .title p {
+    font-size: 15px;
+    color: #1a1a1a
+}
+
+ .content .food .foodR ul .min .title span {
+    font-size: 12px;
+    color: #a5a5a5
+}
+
+ .content .food .foodR ul .big {
+    height: 400px
+}
+
+ .content .food .foodR ul .big .title {
+    padding: 39px 0
+}
+
+ .content .food .foodR ul .big .title p {
+    font-size: 20px;
+    color: #2AAD49;
+    font-weight: 600
+}
+
+ .content .food .foodR ul .big .title span {
+    color: #a5a5a5
+}
+
+ .content .food .foodR ul .abs {
+    position: absolute
+}
+
+ .content .food .foodR ul .abs_1 {
+    bottom: 0
+}
+
+ .content .food .foodR ul .abs_2 {
+    bottom: 0;
+    left: 232px
+}

@@ -2,14 +2,7 @@
 import React from 'react'
 import './index.css'
 import {Link,Route,Redirect,NavLink,Switch} from 'react-router-dom'
-import Home from '../../middle/Home'
-import Life from '../../middle/Life'
-import Furnishing from '../../middle/Furnishing'
-import Food from '../../middle/Food'
-import Articles from '../../middle/Articles'
-import Vip from '../../middle/Vip'
-import My from '../../middle/My'
-import Middle from '../../middle'
+
 export default class Nav extends React.Component {
 
     constructor(props) {

@@ -10,6 +10,8 @@
     "css-loader": "^3.2.0",
     "element-react": "^1.4.34",
     "element-theme-default": "^1.4.13",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
     "lib-flexible": "^0.3.2",
     "react": "^16.11.0",
     "react-app-rewired": "2.0.2-next.0",

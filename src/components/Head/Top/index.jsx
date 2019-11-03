@@ -9,7 +9,9 @@ import {getUser} from '../../../store/sign'
    
      return {
         sign:state.sign.sign,
-        okSign:state.sign.okSign//判断是否登录
+        okSign:state.sign.okSign,//判断是否登录
+        name: state.user.name,//用户名字
+        nameId:state.user.id,//用户id
      }
 
  },{
@@ -72,9 +74,13 @@ componentDidMount(){
         return(
             <div className="topBox">
             <div className="top clearfix">
+                 <div className="fl">
+                    
+                     <p className="usersName">{this.props.name==undefined?this.props.nameId:this.props.name}</p>
+                 </div>
                 <ul className="fr">
                     <li className="sing"><a  onClick={this.cancel}>{this.state.sign}</a></li>
-                    <li className="reg"><a href="/reg">[注册]</a></li>
+                    <li className="reg"><a href="/reg?reg">[注册]</a></li>
                     <li className="line"><a >|</a></li>
                     <li><Link to="/account/user_1">我的账号</Link></li>
                     <li className="line"><a>|</a></li>

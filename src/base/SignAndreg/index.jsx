@@ -16,8 +16,9 @@ export default function SignAndReg(props){
     <div className="singTop clearfix">
     <div className="singLogo fl">
         <img src={logo} />
+        
      </div>
-    <div className="singTxt fl"><span>|</span><i>欢迎登录</i></div>
+    <div className="singTxt fl"><span>|</span><i>{!props.reg?'欢迎登录':props.reg}</i></div>
     </div> 
   )
 }

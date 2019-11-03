@@ -1,0 +1,33 @@
+.food{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 35px 0px 50px 0px;
+}
+.food .food-box{
+     width: 1200px;
+     margin: 0 auto;
+}
+
+.food .food-box .food-list{
+    width: 172px;
+
+}
+.food .food-box .food-list ul  .food_serch{
+    font-size: 18px;
+}
+   
+
+.food .food-box .food-list ul li{
+    border-bottom: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    padding: 0px 32px 0px 80px;
+    line-height: 40px;
+    height: 40px;
+}
+.food .food-box .food-list ul li p{
+    color: #ffffff;
+    font-size: 15px;
+    color: #747474;
+}
+
+
