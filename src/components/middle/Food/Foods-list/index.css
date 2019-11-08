@@ -30,6 +30,8 @@
 }
 .foods-list .list-box ul li .goods-img{
     height: 230px;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .foods-int{
@@ -40,6 +42,10 @@
 .foods-int .int-name{
     font-size: 15px;
     color: #8a8a8a;
+    height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
 }
 .foods-int .price .new_price{

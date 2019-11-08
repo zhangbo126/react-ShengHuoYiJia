@@ -1,0 +1,79 @@
+.collection-titel p{
+    position: relative;
+    width: 90px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 16px;
+}
+
+.collection-titel p::after{
+    content: '';
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    background-color: #f66061;
+    top: 22px;
+    left: 0;
+}
+
+.coll-item{
+    width: 1005px;
+}
+
+
+
+.coll-box{
+    display: flex;
+    border: 1px solid #e6e6e6;
+    border-right: none;
+    display: flex;
+}
+.coll-box li{
+     border-right: 1px solid #e6e6e6;
+     text-align: center;
+     width: 25%;
+}
+
+.coll-box .coll-img{
+    height: 210px;
+}
+
+.coll-box .coll-name{
+  font-size: 15px;
+    
+}
+
+.coll-txt{
+    box-sizing: border-box;
+    padding: 0px 25px;
+}
+
+.coll-box .coll-txt .coll-price .new-price{
+  font-size: 20px;
+  color: #ed601b;
+}
+
+.coll-box .coll-txt .coll-price .old-price{
+    color: #cdcdcd;
+    font-size: 14px;
+    text-decoration:line-through;
+    line-height: 30px;
+}
+
+.coll-box .coll-txt .cart{
+    margin: 19px 0px;
+
+}
+.coll-box .coll-txt .cart button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #7c7c7c;
+
+}
+
+
+

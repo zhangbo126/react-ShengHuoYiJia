@@ -13,7 +13,7 @@ function App() {
               <Route path="/sign" component={Sign}></Route>
              <Route path="/reg" component={Reg}></Route>
              <Route path="/" component={Index}></Route>      
-             {/* <Redirect to="/home"></Redirect> */}
+             <Redirect to="/"></Redirect>
             </Switch>
        
   );

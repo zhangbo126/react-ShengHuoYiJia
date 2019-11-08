@@ -72,6 +72,7 @@ import  {issign} from '../../store/sign'
 
 	} 
 
+
     render() {
         return (
           <div className="sign" id="sign">

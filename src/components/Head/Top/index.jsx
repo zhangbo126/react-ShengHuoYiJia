@@ -12,6 +12,7 @@ import {getUser} from '../../../store/sign'
         okSign:state.sign.okSign,//判断是否登录
         name: state.user.name,//用户名字
         nameId:state.user.id,//用户id
+      
      }
 
  },{
@@ -41,8 +42,7 @@ componentDidMount(){
         this.setState({
             sign:'[登录]',
           })
-     }
-    
+     }  
 }
 
 
@@ -56,16 +56,12 @@ componentDidMount(){
             sign:'[登录]',
           })
         this.props.history.push('/home')
-       
- 
    }else{    
      localStorage.setItem('users',JSON.stringify({sign:'[注销]',isSign:true,}))
      this.setState({
         sign:'[注销]',
       })
      this.props.history.push('/sign')
-   
-  
    } 
 //    this.props.history.push('/sign')
  }

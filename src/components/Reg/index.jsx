@@ -41,18 +41,13 @@ export default class  Reg extends React.Component {
 
    //跳转登录
    goSign=()=>{
-   
-     this.props.history.push('/sign',{tel:this.state.signTel})
-     
 
+     this.props.history.push('/sign',{tel:this.state.signTel})
    }
 
      
    //注册
-
    userReg=()=>{
-       
- 
              //手机号格式验证
        if(new RegExp(/^1[3-9]\d{9}$/).test(this.refs.tel.value)){
            //密码格式验证
@@ -86,7 +81,7 @@ export default class  Reg extends React.Component {
                            }else{
                             this.setState({
                                 regMsg:"注册成功",
-                                signTel:this.props.refs.tel.value
+                                // signTel:this.props.refs.tel.value
                             })
                             tip='注册成功'
                             success()

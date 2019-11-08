@@ -4,7 +4,7 @@ export default(state,action)=>{
        state = state || {sign:'[登录]',okSign:false};
        switch(action.type){
             case 'SIGN':
-             localStorage.setItem('users',JSON.stringify({sign:'[注销]',isSign:true,userId:action.user[0]._id}))  
+             localStorage.setItem('users',JSON.stringify({sign:'[注销]',isSign:true,userId:action.user[0]._id,goodsCart:[]}))  
             return {sign:'[注销]',okSign:true,user:action.user,...state}
             case 'GETUSER':
              return{...state}

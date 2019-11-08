@@ -8,6 +8,9 @@ import {Route} from 'react-router-dom'
 import RevisePass from './RevisePass'
 import {connect} from 'react-redux'
 import {getpass} from '../../../../store/user'
+import Order from './Order'
+import Collection from './Collection'
+
 
 @connect((state)=>{
 
@@ -33,8 +36,7 @@ import {getpass} from '../../../../store/user'
 			}
 
 
-			componentDidMount(){
-			
+			componentDidMount(){		
 			// let id =this.props.location.state.id
 			//  console.log(this.props.location.state)
 			let b =localStorage.getItem('users')
@@ -49,8 +51,7 @@ import {getpass} from '../../../../store/user'
 					}).then(res=>res.json()).then(req=>{
 				       
 			   //保存当前用户密码 id 收货地址			
-				  this.props.getpass(req.password,req._id,req.location,req.users,req.name)
-				  
+				  this.props.getpass(req.password,req._id,req.location,req.users,req.name)			  
 
 				this.setState({
 			        	money:req.money
@@ -101,8 +102,10 @@ render(){
 return(
 <div className="user_1">
 	<div id="data" className="data">
-
-		<div className="dataTop clearfix" hidden={this.state.isShow}>
+        
+		
+		  <div className="dataTop clearfix" hidden={this.state.isShow}>
+		    <div className="data-box clearfix">
 			<div className="dataTopL fl">
 				<div className="head fl">
 					<img src={head} />
@@ -118,6 +121,7 @@ return(
 					</div>
 				</div>
 			</div>
+			
 			<div className="dataTopR fr">
 				<div className="money">
 					<div className="moneyImg fl">
@@ -127,10 +131,17 @@ return(
 						<p>我的余额</p>
 						<i>￥{this.state.money}</i>
 					</div>
-				</div>
+			
 
 			</div>
-		</div>
+			</div>
+			
+		</div>    
+		  {/* 订单 */}
+		  <Order></Order>
+		 <Collection></Collection>
+		  </div>
+	   
 		<div className="RevisePass" hidden={!this.state.isShow}>
 			 <RevisePass onRevis={this.Revise}></RevisePass>
 		</div>

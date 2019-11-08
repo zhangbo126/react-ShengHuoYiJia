@@ -1,0 +1,16 @@
+.Notfount{
+   width: 1005px;
+}
+
+.Notfount .Notfount-box{
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 150px 0px;
+}
+
+.Notfount .Notfount-box h1{
+
+}

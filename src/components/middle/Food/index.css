@@ -16,6 +16,8 @@
 }
 .food .food-box .food-list ul  .food_serch{
     border-top: 2px solid #ffa130;
+    font-size: 18px;
+    font-weight: 700;
 
 }
 .food .food-box .food-list ul  .food_serch p{
@@ -187,6 +189,6 @@
 .active-font{
     color: #fb7803;
 }
-.actife-bg{
+.active-bg{
     background-color: #fb7803;
 }
