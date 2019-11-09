@@ -17,7 +17,8 @@
 
 #data .dataTop .dataTopL .head img {
     width: 100%;
-    border-radius: 50%
+    border-radius: 50%;
+    height:100%;
 }
 
 #data .dataTop .dataTopL .users {
@@ -65,3 +66,8 @@
 .modify{
     color: #f70505;
 }
+
+.avatar-uploader > .ant-upload {
+    width: 128px;
+    height: 128px;
+  }

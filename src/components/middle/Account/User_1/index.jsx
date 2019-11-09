@@ -2,7 +2,7 @@
 /* eslint-disable eqeqeq */
 import React from 'react'
 import './index.css'
-import head from './head.png'
+import head from './NotHeadimg.jpg'
 import money from './money.png'
 import {Route} from 'react-router-dom'
 import RevisePass from './RevisePass'
@@ -10,8 +10,7 @@ import {connect} from 'react-redux'
 import {getpass} from '../../../../store/user'
 import Order from './Order'
 import Collection from './Collection'
-
-
+  
 @connect((state)=>{
 
    return{
@@ -24,21 +23,16 @@ import Collection from './Collection'
 
 })
 
-
-
  class User_1 extends React.Component{
 
 			constructor(props){
 			super(props)
 			this.state={
-		      	isShow:false,
+				  isShow:false,
+				  loading: false,
 			   }
 			}
-
-
 			componentDidMount(){		
-			// let id =this.props.location.state.id
-			//  console.log(this.props.location.state)
 			let b =localStorage.getItem('users')
 			let user= JSON.parse(b)	
 			  if(user.isSign && b!=null){
@@ -51,10 +45,11 @@ import Collection from './Collection'
 					}).then(res=>res.json()).then(req=>{
 				       
 			   //保存当前用户密码 id 收货地址			
-				  this.props.getpass(req.password,req._id,req.location,req.users,req.name)			  
+				  this.props.getpass(req.password,req._id,req.location,req.users,req.name,req.imgUrl)			  
 
 				this.setState({
-			        	money:req.money
+						money:req.money,
+						headImg:req.imgUrl
 				})
 				//判断用户是否有名字
 				if(req.name ==undefined){
@@ -84,14 +79,11 @@ import Collection from './Collection'
 					  isShow:true,
 				  })
 			  }
-		
-     
-
 }
+
 
 //修改
 Revise=()=>{
-
 	this.setState({
 	   isShow:!this.state.isShow	
 	})
@@ -99,16 +91,16 @@ Revise=()=>{
 
 
 render(){
+
 return(
 <div className="user_1">
-	<div id="data" className="data">
-        
-		
+	<div id="data" className="data">	
 		  <div className="dataTop clearfix" hidden={this.state.isShow}>
 		    <div className="data-box clearfix">
 			<div className="dataTopL fl">
 				<div className="head fl">
-					<img src={head} />
+		        <img src={this.state.headImg?this.state.headImg:head} />
+			
 				</div>
 				<div className="users fl">
 					<div className="namebox ">
@@ -131,17 +123,13 @@ return(
 						<p>我的余额</p>
 						<i>￥{this.state.money}</i>
 					</div>
-			
-
 			</div>
-			</div>
-			
+			</div>		
 		</div>    
 		  {/* 订单 */}
 		  <Order></Order>
 		 <Collection></Collection>
-		  </div>
-	   
+		  </div>	   
 		<div className="RevisePass" hidden={!this.state.isShow}>
 			 <RevisePass onRevis={this.Revise}></RevisePass>
 		</div>

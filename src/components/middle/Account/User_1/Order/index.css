@@ -64,6 +64,8 @@
 .cart-accounts .cart-item .cart-img{
     width: 140px;
     overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
 }
 .cart-accounts .cart-item .cart-img img{
     width: 100%;

@@ -34,58 +34,37 @@ class Foods_list extends React.Component{
     }
         //添加购物车
      addCart=(v)=>{   
-     
-      let b = localStorage.getItem('users')
-      let user = JSON.parse(b)  
-                              
-          //存储购物车数据        
-             if(cart.length===0){
-                 v.num=1
-                 cart.unshift(v)
-               
-             }else{           
-                let index  = cart.findIndex((item)=>{
-                       // eslint-disable-next-line no-unused-expressions
-                    return   item.id ===v.id
-                })
-                if(index===-1){
-                    v.num=1
-                    cart.push(v)
-                    
-                }else{
-                  if(cart[index].num>=1){        
-                    cart[index].num+=1
-                  }else{
-                    cart[index].num=2
-                  }
-                }          
-          }     
-          success()
-            //购物车总数量
-            let sum= JSON.parse(localStorage.getItem('cart'))  
-            if(sum!=null){
+     //购物车数据
+     let sum= JSON.parse(localStorage.getItem('cart'))  
+          //检测购物车是否有内容                     
+     if(sum!=null){
+               //存储购物车数据             
+               let index  = sum.cart.findIndex((item)=>{
+                      // eslint-disable-next-line no-unused-expressions
+                   return   item.id ===v.id
+               })
+               if(index===-1){
+                   v.num=1
+                   sum.cart.push(v)
+                   
+               }else{
+                 if(sum.cart[index].num>=1){        
+                   sum.cart[index].num+=1
+                 }else{
+                   sum.cart[index].num=2
+                 }
+               }                
                 //不等于null 原来的 数量+1
-                localStorage.setItem('cart',JSON.stringify({cart,cartsum:sum.cartsum+1})) 
-                this.props.addcart(cart,sum.cartsum)  
-            }else{
-                //没有默认为1
-                 localStorage.setItem('cart',JSON.stringify({cart,cartsum:1})) 
-                 this.props.addcart(cart,1) 
-            }   
-        
-     
-    //   this.props.addcart(cart,this.state.cartTotal) 
-            // fetch('/goodscart/'+user.userId,{
-            //     method:'post',
-            //     headers:{
-            //         "Content-Type":"application/json"
-            //     },
-            //     body:JSON.stringify(v)
-            // }).then(req=>req.json())
-            // .then(data=>{
-            //     success()
-            //     console.log(data)
-            // })
+                localStorage.setItem('cart',JSON.stringify({cart:sum.cart,cartsum:sum.cartsum+1})) 
+                this.props.addcart(sum.cart,sum.cartsum)            
+     }else{
+        //没有默认为1
+        v.num=1
+        localStorage.setItem('cart',JSON.stringify({cart:[v],cartsum:1})) 
+        this.props.addcart(cart,1) 
+     }                       
+          success()
+
      }
 
 

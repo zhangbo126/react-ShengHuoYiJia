@@ -29,11 +29,12 @@
  #data1 .modify .pTxt {
     font-size: 17px;
     color: #888484;
-    font-weight: 600
+    font-weight: 600;
+   
 }
 
  #data1 .modify .modHead {
-    width: 190px;
+    width: 265px;
     height: 190px;
     box-sizing: border-box;
     padding: 40px 0 50px 0
@@ -130,6 +131,17 @@
     padding: 27px 0
 }
 
+.headImg{
+    height: 93px;
+    width: 93px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.headImg img{
+    width: 100%;
+    height: 100%;
+}
 
 .modify #popup {
     background-color: #f29525;
@@ -158,6 +170,35 @@
     line-height: 45px
 }
 
+.file{
+    margin-top: 28px;
+}
+
+.file .fileA {
+    position: relative;
+    display: inline-block;
+    color: rgb(30, 136, 199);
+    text-indent: 0px;
+    line-height: 20px;
+    background: rgb(208, 238, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(153, 211, 245);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.file .fileA input {
+    position: absolute;
+    font-size: 100px;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+}
+
 .ant-btn-primary{
     border-color: #f29525 !important;
 }
@@ -166,3 +207,8 @@ input{
     height: 100%;
     vertical-align: text-bottom;
 }
+
+.avatar-uploader > .ant-upload {
+    width: 128px;
+    height: 128px;
+  }

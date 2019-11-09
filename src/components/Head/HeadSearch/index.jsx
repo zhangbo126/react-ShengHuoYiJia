@@ -32,7 +32,7 @@ import {foodserch}  from '../../../store/serch'
       //更新购物车总数量
    
       this.setState({
-          cartTotal:props.cartTotal
+          cartTotal:JSON.parse(localStorage.getItem('cart')).cartsum 
       })
 
  }
@@ -47,7 +47,7 @@ import {foodserch}  from '../../../store/serch'
             })
     }else{
         this.setState({
-            cartTotal:''
+            cartTotal:null
         })
     }
  }
@@ -70,7 +70,7 @@ import {foodserch}  from '../../../store/serch'
                     <div className="searchBtn  fr">
                         <button>一键客服</button>	
                         <button className="shoppcar"><span className="iconfont icon-gouwu"></span>
-                        购物车<span className="cartTip" hidden={this.state.cartTotal>=1 ? false : true} >{this.state.cartTotal+1}</span></button>
+                        购物车<span className="cartTip" hidden={this.state.cartTotal>=1 ? false : true} >{String(this.state.cartTotal)}</span></button>
                         </div>
                     <div className="searchMiddle clearfix">
                         <div className="select fl">

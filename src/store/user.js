@@ -5,7 +5,13 @@ export default(state,action)=>{
           case 'GET_PASS':
 
             return {
-               name:action.name,tel:action.tel,pass:action.pass,id:action.id,location:action.location,...state
+               name:action.name,
+               tel:action.tel,
+               pass:action.pass,
+               id:action.id,
+               location:action.location,
+               imgUrl:action.imgUrl,
+               ...state
             }
 
           default:{
@@ -14,9 +20,9 @@ export default(state,action)=>{
       }
 }
 
-export const getpass=(pass,id,location,tel,name)=>(dispatch)=>{
+export const getpass=(pass,id,location,tel,name,imgUrl)=>(dispatch)=>{
 
-       dispatch({type:'GET_PASS',pass,id,location,tel,name})
+       dispatch({type:'GET_PASS',pass,id,location,tel,name,imgUrl})
 
       
 }
